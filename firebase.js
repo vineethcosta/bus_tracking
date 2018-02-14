@@ -1,10 +1,10 @@
-window.alert("Yo");
+//window.alert("Yo");
 
 
 
 
 function myMap() {
-	window.alert("Yola");
+	window.alert("Jai Balayya");
 
 	var firebaseRef = firebase.database().ref();
 var firebaseLocRef = firebase.database().ref().child("Location");
