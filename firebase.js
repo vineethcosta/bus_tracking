@@ -1,11 +1,31 @@
 //window.alert("Yo");
+var bus_node;
+bus_node = "bus_18";
+function changeMap()
+{
+	//window.alert("Setting the bus");
+	if(document.getElementById("bus_18").checked)
+		bus_node = "bus_18";
+	if(document.getElementById("bus_17").checked)
+		bus_node = "bus_17";
+	myMap()
+	//window.alert("Called the map function");
+}
 
 function myMap() {
 	window.alert("Jai Balayya");
 	//var flag = true;
+	/*
+	if(document.getElementById("bus_18").checked)
+		bus_node = "bus_18";
+	if(document.getElementById("bus_17").checked)
+		bus_node = "bus_17";
+	*/
+
+
 
 	var firebaseRef = firebase.database().ref();
-var firebaseLocRef = firebase.database().ref().child("Location");
+var firebaseLocRef = firebase.database().ref().child(bus_node);
   var mapCanvas = document.getElementById("map");
   var map;
   var marker;
