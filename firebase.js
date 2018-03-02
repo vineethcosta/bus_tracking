@@ -3,7 +3,7 @@ var bus_node;
 bus_node = "bus_18";
 function changeMap()
 {
-	//window.alert("Setting the bus");
+	window.alert("Setting the bus");
 	if(document.getElementById("bus_18").checked)
 		bus_node = "bus_18";
 	if(document.getElementById("bus_17").checked)
