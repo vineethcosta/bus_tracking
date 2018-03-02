@@ -7,7 +7,9 @@
 
 </head>
 <body>
-<h1 style="color: grey;">S</h1>
+<h1>S</h1><br>
+<input type="radio" name="bus_node" id = "bus_18" checked="true" onclick="changeMap()">Bus 18<br>
+<input type="radio" name="bus_node" id = "bus_17" onclick="changeMap()" >Bus 17<br>
 
 <div id="map" style="width:100%;height:500px"></div>
 
@@ -25,7 +27,7 @@
   firebase.initializeApp(config);
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1Vssq5O95_d93G3goxy5sy09DNOra-3c&callback=myMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1Vssq5O95_d93G3goxy5sy09DNOra-3c&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
@@ -33,3 +35,4 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 
 </body>
 </html>
+
